@@ -2568,6 +2568,8 @@
 		777F66DAECCF452F8EA07780 /* Assimp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Assimp.cpp; path = "external/assimp-3.0.1270/code/Assimp.cpp"; sourceTree = SOURCE_ROOT; };
 		77D7C74A96124160BA38A340 /* shader.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = shader.hpp; path = common/shader.hpp; sourceTree = SOURCE_ROOT; };
 		782D8F73484D4A67ADD8C8FD /* RawLoader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RawLoader.cpp; path = "external/assimp-3.0.1270/code/RawLoader.cpp"; sourceTree = SOURCE_ROOT; };
+		78D9735A2793011B007F0BA0 /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = SimpleFragmentShader.fragmentshader; path = playground/SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		78D9735B2793011B007F0BA0 /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = SimpleVertexShader.vertexshader; path = playground/SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
 		791A84C13FE14D0EBF4DC381 /* ComputeUVMappingProcess.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ComputeUVMappingProcess.cpp; path = "external/assimp-3.0.1270/code/ComputeUVMappingProcess.cpp"; sourceTree = SOURCE_ROOT; };
 		7927EF83A72844BBAC93977E /* objloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = objloader.cpp; path = common/objloader.cpp; sourceTree = SOURCE_ROOT; };
 		793FF74E1BF54480A6E68F08 /* btTriangleInfoMap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = btTriangleInfoMap.h; path = "external/bullet-2.81-rev2613/src/BulletCollision/CollisionShapes/btTriangleInfoMap.h"; sourceTree = SOURCE_ROOT; };
@@ -4686,9 +4688,9 @@
 		67396D24C1ED4CACB030F8CC /* tutorial02_red_triangle */ = {
 			isa = PBXGroup;
 			children = (
+				3468C0FC842B4477A4E204BB /* shaders */,
 				4199B5768ECC4AA1B21C34AD /* Source Files */,
 				76D8F865B9754788AE2A477A /* common */,
-				3468C0FC842B4477A4E204BB /* shaders */,
 				ADF67CBD23DC4D1692E5D1D3 /* CMakeLists.txt */,
 			);
 			name = tutorial02_red_triangle;
@@ -4976,6 +4978,15 @@
 				40C3D439B7FC48989C0FEC68 /* CMakeLists.txt */,
 			);
 			name = windows;
+			sourceTree = "<group>";
+		};
+		78D9735C2793013A007F0BA0 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				78D9735A2793011B007F0BA0 /* SimpleFragmentShader.fragmentshader */,
+				78D9735B2793011B007F0BA0 /* SimpleVertexShader.vertexshader */,
+			);
+			name = shaders;
 			sourceTree = "<group>";
 		};
 		78DCC37DB08D4B58B3C1EDC9 /* empty */ = {
@@ -6658,6 +6669,7 @@
 		EDAD6420A896474080E45477 /* playground */ = {
 			isa = PBXGroup;
 			children = (
+				78D9735C2793013A007F0BA0 /* shaders */,
 				BA5E21F4CEB94443ABA8C5D2 /* Source Files */,
 				4754106A318E4F1E96CD919B /* common */,
 				D2324DDCDEFD414D95DB1BC7 /* CMakeLists.txt */,
