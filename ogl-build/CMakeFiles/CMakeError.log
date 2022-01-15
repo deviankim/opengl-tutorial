@@ -1,10 +1,10 @@
 Determining size of off64_t failed with the following output:
-Change Dir: /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp
+Change Dir: /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_b870c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[92026]: Class AMSupportURLConnectionDelegate is implemented in both /usr/lib/libauthinstall.dylib (0x1f882eb90) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1080d02c8). One of the two will be used. Which one is undefined.
-objc[92026]: Class AMSupportURLSession is implemented in both /usr/lib/libauthinstall.dylib (0x1f882ebe0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1080d0318). One of the two will be used. Which one is undefined.
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_eec5a -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[10993]: Class AMSupportURLConnectionDelegate is implemented in both /usr/lib/libauthinstall.dylib (0x1f882eb90) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1042902c8). One of the two will be used. Which one is undefined.
+objc[10993]: Class AMSupportURLSession is implemented in both /usr/lib/libauthinstall.dylib (0x1f882ebe0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x104290318). One of the two will be used. Which one is undefined.
 Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_b870c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_eec5a -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
 
 User defaults from command line:
     HideShellScriptEnvironment = YES
@@ -15,67 +15,67 @@ note: Planning
 Analyze workspace
 
 Create build description
-Build description signature: 2c3f04988237ae2dbf3c84f96f58e5b5
-Build description path: /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/build/XCBuildData/2c3f04988237ae2dbf3c84f96f58e5b5-desc.xcbuild
+Build description signature: 5972bfc271e2fa1dd276cf38c57c18f7
+Build description path: /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/build/XCBuildData/5972bfc271e2fa1dd276cf38c57c18f7-desc.xcbuild
 
 note: Build preparation complete
 note: Building targets in dependency order
-CreateBuildDirectory /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp
-    cd /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp
+CreateBuildDirectory /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp
+    cd /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp
 
-CreateBuildDirectory /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/Debug
-    cd /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/Debug
+CreateBuildDirectory /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/Debug
+    cd /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/Debug
 
-CompileC /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/OFF64_T.o /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_b870c' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -D_LARGEFILE64_SOURCE\=1 -DHAVE_SYS_TYPES_H -DHAVE_STDINT_H -DHAVE_STDDEF_H -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/Debug/include -I/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/DerivedSources-normal/arm64 -I/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/DerivedSources/arm64 -I/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/DerivedSources -F/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/OFF64_T.d --serialize-diagnostics /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/OFF64_T.dia -c /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c -o /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/OFF64_T.o
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+WriteAuxiliaryFile /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/cmTC_eec5a.LinkFileList (in target 'cmTC_eec5a' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp
+    write-file /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/cmTC_eec5a.LinkFileList
+
+CompileC /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/OFF64_T.o /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_eec5a' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -D_LARGEFILE64_SOURCE\=1 -DHAVE_SYS_TYPES_H -DHAVE_STDINT_H -DHAVE_STDDEF_H -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/Debug/include -I/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/DerivedSources-normal/arm64 -I/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/DerivedSources/arm64 -I/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/DerivedSources -F/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/OFF64_T.d --serialize-diagnostics /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/OFF64_T.dia -c /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c -o /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/OFF64_T.o
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
   ('0' + ((SIZE / 10000)%10)),
            ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
 #define SIZE (sizeof(off64_t))
                      ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
   ('0' + ((SIZE / 1000)%10)),
            ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
 #define SIZE (sizeof(off64_t))
                      ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
   ('0' + ((SIZE / 100)%10)),
            ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
 #define SIZE (sizeof(off64_t))
                      ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
   ('0' + ((SIZE / 10)%10)),
            ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
 #define SIZE (sizeof(off64_t))
                      ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
   ('0' +  (SIZE    % 10)),
            ^
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
 #define SIZE (sizeof(off64_t))
                      ^
 5 errors generated.
-
-WriteAuxiliaryFile /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/cmTC_b870c.LinkFileList (in target 'cmTC_b870c' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp
-    write-file /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/cmTC_b870c.LinkFileList
 
 ** BUILD FAILED **
 
 
 The following build commands failed:
-	CompileC /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b870c.build/Objects-normal/arm64/OFF64_T.o /Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_b870c' from project 'CMAKE_TRY_COMPILE')
+	CompileC /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_eec5a.build/Objects-normal/arm64/OFF64_T.o /Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_eec5a' from project 'CMAKE_TRY_COMPILE')
 (1 failure)
 
 
-/Users/ssk/workspaces/tutorial/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+/Users/ssk/workspaces/tutorial/opengl/ogl-build/CMakeFiles/CheckTypeSize/OFF64_T.c:
 #include <sys/types.h>
 #include <stdint.h>
 #include <stddef.h>

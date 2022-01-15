@@ -1,6 +1,6 @@
 #!/bin/sh
 bindir=$(pwd)
-cd /Users/ssk/workspaces/tutorial/ogl/tutorial07_model_loading/
+cd /Users/ssk/workspaces/tutorial/opengl/ogl/tutorial07_model_loading/
 export 
 
 if test "x$1" = "x--debugger"; then
@@ -8,10 +8,10 @@ if test "x$1" = "x--debugger"; then
 	if test "x" = "xYES"; then
 		echo "r  " > $bindir/gdbscript
 		echo "bt" >> $bindir/gdbscript
-		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/ogl-build/Debug/tutorial07_model_loading 
+		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/tutorial07_model_loading 
 	else
-		"/Users/ssk/workspaces/tutorial/ogl-build/Debug/tutorial07_model_loading"  
+		"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/tutorial07_model_loading"  
 	fi
 else
-	"/Users/ssk/workspaces/tutorial/ogl-build/Debug/tutorial07_model_loading"  
+	"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/tutorial07_model_loading"  
 fi

@@ -1,6 +1,6 @@
 #!/bin/sh
 bindir=$(pwd)
-cd /Users/ssk/workspaces/tutorial/ogl/playground/
+cd /Users/ssk/workspaces/tutorial/opengl/ogl/playground/
 export 
 
 if test "x$1" = "x--debugger"; then
@@ -8,10 +8,10 @@ if test "x$1" = "x--debugger"; then
 	if test "x" = "xYES"; then
 		echo "r  " > $bindir/gdbscript
 		echo "bt" >> $bindir/gdbscript
-		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/ogl-build/Debug/playground 
+		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/playground 
 	else
-		"/Users/ssk/workspaces/tutorial/ogl-build/Debug/playground"  
+		"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/playground"  
 	fi
 else
-	"/Users/ssk/workspaces/tutorial/ogl-build/Debug/playground"  
+	"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Debug/playground"  
 fi

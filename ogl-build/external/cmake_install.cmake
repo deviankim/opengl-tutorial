@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ssk/workspaces/tutorial/ogl/external
+# Install script for directory: /Users/ssk/workspaces/tutorial/opengl/ogl/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,17 +37,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/ogl-build")
+set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/opengl/ogl-build")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/glfw-3.1.2/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/contrib/zlib/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/code/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/bullet-2.81-rev2613/src/BulletSoftBody/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/bullet-2.81-rev2613/src/BulletCollision/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/bullet-2.81-rev2613/src/BulletDynamics/cmake_install.cmake")
-  include("/Users/ssk/workspaces/tutorial/ogl-build/external/bullet-2.81-rev2613/src/LinearMath/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/glfw-3.1.2/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/contrib/zlib/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/code/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/bullet-2.81-rev2613/src/BulletSoftBody/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/bullet-2.81-rev2613/src/BulletCollision/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/bullet-2.81-rev2613/src/BulletDynamics/cmake_install.cmake")
+  include("/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/bullet-2.81-rev2613/src/LinearMath/cmake_install.cmake")
 
 endif()
 

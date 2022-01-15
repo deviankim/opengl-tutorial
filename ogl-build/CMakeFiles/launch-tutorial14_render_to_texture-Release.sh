@@ -1,6 +1,6 @@
 #!/bin/sh
 bindir=$(pwd)
-cd /Users/ssk/workspaces/tutorial/ogl/tutorial14_render_to_texture/
+cd /Users/ssk/workspaces/tutorial/opengl/ogl/tutorial14_render_to_texture/
 export 
 
 if test "x$1" = "x--debugger"; then
@@ -8,10 +8,10 @@ if test "x$1" = "x--debugger"; then
 	if test "x" = "xYES"; then
 		echo "r  " > $bindir/gdbscript
 		echo "bt" >> $bindir/gdbscript
-		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/ogl-build/Release/tutorial14_render_to_texture 
+		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/opengl/ogl-build/Release/tutorial14_render_to_texture 
 	else
-		"/Users/ssk/workspaces/tutorial/ogl-build/Release/tutorial14_render_to_texture"  
+		"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Release/tutorial14_render_to_texture"  
 	fi
 else
-	"/Users/ssk/workspaces/tutorial/ogl-build/Release/tutorial14_render_to_texture"  
+	"/Users/ssk/workspaces/tutorial/opengl/ogl-build/Release/tutorial14_render_to_texture"  
 fi

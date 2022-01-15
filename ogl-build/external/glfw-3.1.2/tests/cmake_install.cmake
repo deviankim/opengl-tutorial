@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ssk/workspaces/tutorial/ogl/external/glfw-3.1.2/tests
+# Install script for directory: /Users/ssk/workspaces/tutorial/opengl/ogl/external/glfw-3.1.2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,5 +37,5 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/ogl-build")
+set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/opengl/ogl-build")
 

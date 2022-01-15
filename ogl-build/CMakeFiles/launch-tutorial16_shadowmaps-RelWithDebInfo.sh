@@ -1,6 +1,6 @@
 #!/bin/sh
 bindir=$(pwd)
-cd /Users/ssk/workspaces/tutorial/ogl/tutorial16_shadowmaps/
+cd /Users/ssk/workspaces/tutorial/opengl/ogl/tutorial16_shadowmaps/
 export 
 
 if test "x$1" = "x--debugger"; then
@@ -8,10 +8,10 @@ if test "x$1" = "x--debugger"; then
 	if test "x" = "xYES"; then
 		echo "r  " > $bindir/gdbscript
 		echo "bt" >> $bindir/gdbscript
-		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/ogl-build/RelWithDebInfo/tutorial16_shadowmaps 
+		GDB_COMMAND-NOTFOUND -batch -command=$bindir/gdbscript  /Users/ssk/workspaces/tutorial/opengl/ogl-build/RelWithDebInfo/tutorial16_shadowmaps 
 	else
-		"/Users/ssk/workspaces/tutorial/ogl-build/RelWithDebInfo/tutorial16_shadowmaps"  
+		"/Users/ssk/workspaces/tutorial/opengl/ogl-build/RelWithDebInfo/tutorial16_shadowmaps"  
 	fi
 else
-	"/Users/ssk/workspaces/tutorial/ogl-build/RelWithDebInfo/tutorial16_shadowmaps"  
+	"/Users/ssk/workspaces/tutorial/opengl/ogl-build/RelWithDebInfo/tutorial16_shadowmaps"  
 fi

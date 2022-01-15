@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code
+# Install script for directory: /Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,29 +37,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/ogl-build")
+set(CMAKE_BINARY_DIR "/Users/ssk/workspaces/tutorial/opengl/ogl-build")
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibassimp3.0-r1270-OGLtutsx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/code/Debug/libassimp.a")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/code/Debug/libassimp.a")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/code/Release/libassimp.a")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/code/Release/libassimp.a")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/code/MinSizeRel/libassimp.a")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/code/MinSizeRel/libassimp.a")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/ogl-build/external/assimp-3.0.1270/code/RelWithDebInfo/libassimp.a")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/ssk/workspaces/tutorial/opengl/ogl-build/external/assimp-3.0.1270/code/RelWithDebInfo/libassimp.a")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libassimp.a")
@@ -77,45 +77,45 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/assimp" TYPE FILE FILES
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/anim.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/ai_assert.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/camera.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/color4.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/color4.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/config.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/defs.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/cfileio.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/light.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/material.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/material.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/mesh.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/postprocess.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/quaternion.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/quaternion.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/scene.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/texture.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/types.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/vector2.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/vector2.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/vector3.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/vector3.inl"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/version.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/cimport.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/importerdesc.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/Importer.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/DefaultLogger.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/ProgressHandler.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/IOStream.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/IOSystem.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/Logger.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/LogStream.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/NullLogger.hpp"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/cexport.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/Exporter.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/anim.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/ai_assert.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/camera.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/color4.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/color4.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/config.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/defs.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/cfileio.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/light.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/material.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/material.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/mesh.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/postprocess.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/quaternion.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/quaternion.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/scene.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/texture.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/types.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/vector2.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/vector2.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/vector3.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/vector3.inl"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/version.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/cimport.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/importerdesc.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/Importer.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/DefaultLogger.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/ProgressHandler.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/IOStream.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/IOSystem.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/Logger.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/LogStream.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/NullLogger.hpp"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/cexport.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/Exporter.hpp"
     )
 endif()
 
@@ -129,9 +129,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/assimp/Compiler" TYPE FILE FILES
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/Compiler/pushpack1.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/../include/assimp/Compiler/poppack1.h"
-    "/Users/ssk/workspaces/tutorial/ogl/external/assimp-3.0.1270/code/pstdint.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/Compiler/pushpack1.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/../include/assimp/Compiler/poppack1.h"
+    "/Users/ssk/workspaces/tutorial/opengl/ogl/external/assimp-3.0.1270/code/pstdint.h"
     )
 endif()
 
