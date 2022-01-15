@@ -1,0 +1,5 @@
+Debug
+.DS_Store
+*.xcuserdatad
+build/XCBuildData/build.db
+build
