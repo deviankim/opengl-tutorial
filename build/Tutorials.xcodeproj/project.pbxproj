@@ -324,6 +324,7 @@
 		78339280443F4582A6E8E68C /* btConvexPointCloudShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA91948614534766B7AC596C /* btConvexPointCloudShape.cpp */; };
 		783D645D83234472A19671B4 /* TwOpenGLCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 511A95BEF84041A28D2DA5A3 /* TwOpenGLCore.mm */; };
 		78A4154872E24A65BE42926C /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F74EE88785249E3A4F12FC9 /* controls.cpp */; };
+		78D9736A279620C4007F0BA0 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D97368279620C4007F0BA0 /* texture.cpp */; };
 		7943C42AEFA94B25A25B1E86 /* btSoftBodyHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A57E013B90483690FC6E5C /* btSoftBodyHelpers.cpp */; };
 		7A60AFEF1EB74EB2A42D1A17 /* btEmptyCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BF945C999074153B836D488 /* btEmptyCollisionAlgorithm.cpp */; };
 		7AE2ECD73C0C4940A5AE1E70 /* btBvhTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 238D2D11860548A9AE544B31 /* btBvhTriangleMeshShape.cpp */; };
@@ -2570,6 +2571,8 @@
 		782D8F73484D4A67ADD8C8FD /* RawLoader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RawLoader.cpp; path = "external/assimp-3.0.1270/code/RawLoader.cpp"; sourceTree = SOURCE_ROOT; };
 		78D9735A2793011B007F0BA0 /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = SimpleFragmentShader.fragmentshader; path = playground/SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
 		78D9735B2793011B007F0BA0 /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = SimpleVertexShader.vertexshader; path = playground/SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
+		78D97368279620C4007F0BA0 /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = common/texture.cpp; sourceTree = "<group>"; };
+		78D97369279620C4007F0BA0 /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = texture.hpp; path = common/texture.hpp; sourceTree = "<group>"; };
 		791A84C13FE14D0EBF4DC381 /* ComputeUVMappingProcess.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ComputeUVMappingProcess.cpp; path = "external/assimp-3.0.1270/code/ComputeUVMappingProcess.cpp"; sourceTree = SOURCE_ROOT; };
 		7927EF83A72844BBAC93977E /* objloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = objloader.cpp; path = common/objloader.cpp; sourceTree = SOURCE_ROOT; };
 		793FF74E1BF54480A6E68F08 /* btTriangleInfoMap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = btTriangleInfoMap.h; path = "external/bullet-2.81-rev2613/src/BulletCollision/CollisionShapes/btTriangleInfoMap.h"; sourceTree = SOURCE_ROOT; };
@@ -4371,6 +4374,8 @@
 			children = (
 				33F7EB72E56445FA8147344F /* shader.cpp */,
 				B385A5BB0B7C46838B2D80C8 /* shader.hpp */,
+				78D97368279620C4007F0BA0 /* texture.cpp */,
+				78D97369279620C4007F0BA0 /* texture.hpp */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -8171,6 +8176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D9736A279620C4007F0BA0 /* texture.cpp in Sources */,
 				B0D54B9F23794B4DBBEC185C /* shader.cpp in Sources */,
 				8FEB7A5753044B6FB3E1D9E8 /* playground.cpp in Sources */,
 			);
