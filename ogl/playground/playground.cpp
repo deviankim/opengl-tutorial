@@ -17,6 +17,7 @@ GLFWwindow* window;
 using namespace glm;
 
 #include <common/shader.hpp>
+#include <common/texture.hpp>
 
 // One color for each vertex. They were generated randomly.
 static const GLfloat g_color_buffer_data[] = {
@@ -95,6 +96,46 @@ static const GLfloat g_vertex_buffer_data[] = {
     1.0f, 1.0f, 1.0f,
     -1.0f, 1.0f, 1.0f,
     1.0f,-1.0f, 1.0f
+};
+
+// Two UV coordinatesfor each vertex. They were created with Blender. You'll learn shortly how to do this yourself.
+static const GLfloat g_uv_buffer_data[] = {
+    0.000059f, 1.0f-0.000004f,
+    0.000103f, 1.0f-0.336048f,
+    0.335973f, 1.0f-0.335903f,
+    1.000023f, 1.0f-0.000013f,
+    0.667979f, 1.0f-0.335851f,
+    0.999958f, 1.0f-0.336064f,
+    0.667979f, 1.0f-0.335851f,
+    0.336024f, 1.0f-0.671877f,
+    0.667969f, 1.0f-0.671889f,
+    1.000023f, 1.0f-0.000013f,
+    0.668104f, 1.0f-0.000013f,
+    0.667979f, 1.0f-0.335851f,
+    0.000059f, 1.0f-0.000004f,
+    0.335973f, 1.0f-0.335903f,
+    0.336098f, 1.0f-0.000071f,
+    0.667979f, 1.0f-0.335851f,
+    0.335973f, 1.0f-0.335903f,
+    0.336024f, 1.0f-0.671877f,
+    1.000004f, 1.0f-0.671847f,
+    0.999958f, 1.0f-0.336064f,
+    0.667979f, 1.0f-0.335851f,
+    0.668104f, 1.0f-0.000013f,
+    0.335973f, 1.0f-0.335903f,
+    0.667979f, 1.0f-0.335851f,
+    0.335973f, 1.0f-0.335903f,
+    0.668104f, 1.0f-0.000013f,
+    0.336098f, 1.0f-0.000071f,
+    0.000103f, 1.0f-0.336048f,
+    0.000004f, 1.0f-0.671870f,
+    0.336024f, 1.0f-0.671877f,
+    0.000103f, 1.0f-0.336048f,
+    0.336024f, 1.0f-0.671877f,
+    0.335973f, 1.0f-0.335903f,
+    0.667969f, 1.0f-0.671889f,
+    1.000004f, 1.0f-0.671847f,
+    0.667979f, 1.0f-0.335851f
 };
 
 
@@ -181,16 +222,6 @@ int main( void )
     );
     
 
-    
-    // 이것이 우리의 버텍스 버퍼를 가리킵니다.
-    GLuint vertexbuffer;
-    // 버퍼를 하나 생성합니다. vertexbuffer 에 결과 식별자를 넣습니다
-    glGenBuffers(1, &vertexbuffer);
-    // 아래의 명령어들은 우리의 "vertexbuffer" 버퍼에 대해서 다룰겁니다
-    glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-    // 우리의 버텍스들을 OpenGL로 넘겨줍니다
-    glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
-    
     int width = 1024;
     int height = 768;
     
@@ -217,7 +248,27 @@ int main( void )
     // Get a handle for our "MVP" uniform
     // Only during the initialisation
     GLuint MatrixID = glGetUniformLocation(programID, "MVP");
-      
+    
+    
+    // Load the texture using any two methods
+    GLuint Texture = loadBMP_custom("uvtemplate.bmp");
+//    GLuint Texture = loadDDS("uvtemplate.DDS");
+    // Get a handle for our "myTextureSampler" uniform
+    GLuint TextureID  = glGetUniformLocation(programID, "myTextureSampler");
+
+
+    GLuint vertexbuffer;
+    glGenBuffers(1, &vertexbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
+    
+    GLuint uvbuffer;
+    glGenBuffers(1, &uvbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(g_uv_buffer_data), g_uv_buffer_data, GL_STATIC_DRAW);
+
+
+    
 	do{
 		
         // Clear the screen
@@ -229,6 +280,12 @@ int main( void )
         // Send our transformation to the currently bound shader, in the "MVP" uniform
         // This is done in the main loop since each model will have a different MVP matrix (At least for the M part)
         glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &mvp[0][0]);
+        
+        // Bind our texture in Texture Unit 0
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, Texture);
+        // Set our "myTextureSampler" sampler to user Texture Unit 0
+        glUniform1i(TextureID, 0);
 
         // 버퍼의 첫번째 속성값(attribute) : 버텍스들
         glEnableVertexAttribArray(0);
@@ -241,6 +298,19 @@ int main( void )
            0,                  // 다음 요소 까지 간격(stride)
            (void*)0            // 배열 버퍼의 오프셋(offset; 옮기는 값)
         );
+        
+        // 2nd attribute buffer : UVs
+        glEnableVertexAttribArray(1);
+        glBindBuffer(GL_ARRAY_BUFFER, uvbuffer);
+        glVertexAttribPointer(
+            1,                                // attribute. No particular reason for 1, but must match the layout in the shader.
+            2,                                // size : U+V => 2
+            GL_FLOAT,                         // type
+            GL_FALSE,                         // normalized?
+            0,                                // stride
+            (void*)0                          // array buffer offset
+        );
+
         // 삼각형 그리기!
         glDrawArrays(GL_TRIANGLES, 0, 12 * 3); // 버텍스 0에서 시작해서; 총 3개의 버텍스로 -> 하나의 삼각형
         glDisableVertexAttribArray(0);
@@ -256,6 +326,7 @@ int main( void )
 
     // Cleanup VBO
     glDeleteBuffers(1, &vertexbuffer);
+    glDeleteBuffers(1, &uvbuffer);
     glDeleteVertexArrays(1, &VertexArrayID);
     glDeleteProgram(programID);
 
