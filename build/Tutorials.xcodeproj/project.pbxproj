@@ -2564,8 +2564,8 @@
 		77649E0DB9B54D46B2F10F1A /* PlyParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlyParser.cpp; path = "external/assimp-3.0.1270/code/PlyParser.cpp"; sourceTree = SOURCE_ROOT; };
 		77725826E79E41D4A5CEFA36 /* title.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = title.c; path = "external/glfw-3.1.2/tests/title.c"; sourceTree = SOURCE_ROOT; };
 		77FF646B8F5A4F848526870D /* tutorial14.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tutorial14.cpp; path = tutorial14_render_to_texture/tutorial14.cpp; sourceTree = SOURCE_ROOT; };
-		7808E42D279807510056DFAA /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertexShader.vertexshader; path = playground/SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
-		7808E42E279807510056DFAA /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragmentShader.fragmentshader; path = playground/SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		7808E42D279807510056DFAA /* SimpleVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertexShader.glsl; path = playground/SimpleVertexShader.glsl; sourceTree = "<group>"; };
+		7808E42E279807510056DFAA /* SimpleFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragmentShader.glsl; path = playground/SimpleFragmentShader.glsl; sourceTree = "<group>"; };
 		7808E42F279807BB0056DFAA /* ColorFragmentShader.fragmentshader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ColorFragmentShader.fragmentshader; path = playground/ColorFragmentShader.fragmentshader; sourceTree = "<group>"; };
 		7808E430279807BB0056DFAA /* TransformVertexShader.vertexshader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TransformVertexShader.vertexshader; path = playground/TransformVertexShader.vertexshader; sourceTree = "<group>"; };
 		780F80F3C6B54EA991F938AA /* btPoolAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = btPoolAllocator.h; path = "external/bullet-2.81-rev2613/src/LinearMath/btPoolAllocator.h"; sourceTree = SOURCE_ROOT; };
@@ -5256,8 +5256,8 @@
 			children = (
 				7808E42F279807BB0056DFAA /* ColorFragmentShader.fragmentshader */,
 				7808E430279807BB0056DFAA /* TransformVertexShader.vertexshader */,
-				7808E42E279807510056DFAA /* SimpleFragmentShader.fragmentshader */,
-				7808E42D279807510056DFAA /* SimpleVertexShader.vertexshader */,
+				7808E42E279807510056DFAA /* SimpleFragmentShader.glsl */,
+				7808E42D279807510056DFAA /* SimpleVertexShader.glsl */,
 			);
 			name = shaders;
 			sourceTree = "<group>";
