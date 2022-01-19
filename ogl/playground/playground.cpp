@@ -1,4 +1,5 @@
 
+#include <stdexcept>
 #include <stdio.h>
 #include <stdlib.h>
 #include <GL/glew.h>
@@ -10,33 +11,35 @@ using namespace glm;
 
 GLFWwindow* window;
 
-int main() {
-    
+static int initializeGlfw() {
     if (!glfwInit()) {
-        fprintf(stderr, "Failed to initialize GLFW\n");
-        return -1;
+        throw std::runtime_error("Failed to initialize GLFW!");
     }
-
+    
     glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+}
+
+int main() {
+    
+    initializeGlfw();
 
     
     window = glfwCreateWindow(800, 800, "나 안죽음", NULL, NULL);
+    
     if (window == NULL) {
-        fprintf(stderr, "Failed to open window. 니 3.3 호환 되는거 맞나?\n");
         glfwTerminate();
-        return -1;
+        throw std::runtime_error("Failed to open window. 니 3.3 호환 되는거 맞나?");
     }
     
     glfwMakeContextCurrent(window);
     glewExperimental = true;
     
     if (glewInit() != GLEW_OK) {
-        fprintf(stderr, "Failed to initialize GLEW\n");
-        return -1;
+        throw std::runtime_error("Failed to initialize GLEW.");
     }
     
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
