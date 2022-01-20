@@ -12,6 +12,8 @@
 using namespace glm;
 
 
+void update(GLFWwindow *window);
+
 void initializeGlfw() {
     if (!glfwInit()) {
         throw std::runtime_error("Failed to initialize GLFW!");
@@ -60,44 +62,40 @@ bool isExitWindow(GLFWwindow* window) {
 }
 
 
-void update(GLFWwindow *window);
+void initializeShaders() {
+    GLuint programID = LoadShaders( "SimpleVertexShader.glsl", "SimpleFragmentShader.glsl" );
+ 
+    glUseProgram(programID);
+}
+
 
 int main() {
     initializeGlfw();
 
     GLFWwindow* window = prepareWindow(800, 800, "Refactoring 하면서 짠다.");
-    
-    GLuint programID = LoadShaders( "SimpleVertexShader.glsl", "SimpleFragmentShader.glsl" );
- 
-    glUseProgram(programID);
 
-    while (!isExitWindow(window)) {
+    initializeShaders();
     
+    while (!isExitWindow(window)) {
         update(window);
-        
     }
     
 }
 
-
-void update(GLFWwindow *window) {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+void drawTriangle() {
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
     glBindVertexArray(VertexArrayID);
     
+    GLuint vertexbuffer;
+    glGenBuffers(1, &vertexbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
     const GLfloat g_vertex_buffer_data[] = {
        -1.0f, -1.0f, 0.0f,
        1.0f, -1.0f, 0.0f,
        0.0f,  1.0f, 0.0f,
     };
-    
-    GLuint vertexbuffer;
-    glGenBuffers(1, &vertexbuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
-    
     
     // 1st attribute buffer : vertices
     glEnableVertexAttribArray(0);
@@ -113,7 +111,12 @@ void update(GLFWwindow *window) {
     // Draw the triangle !
     glDrawArrays(GL_TRIANGLES, 0, 3); // Starting from vertex 0; 3 vertices total -> 1 triangle
     glDisableVertexAttribArray(0);
+}
+
+void update(GLFWwindow *window) {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
+    drawTriangle();
     
     glfwSwapBuffers(window);
     glfwPollEvents();
